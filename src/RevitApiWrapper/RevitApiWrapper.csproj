@@ -78,9 +78,6 @@
   </ItemGroup>
 
  <ItemGroup>
-   <None Update="Logger\AOP\LoggerAOP.json">
-     <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-   </None>
    <None Update="Logger\LoggerSetting.json">
      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
    </None>

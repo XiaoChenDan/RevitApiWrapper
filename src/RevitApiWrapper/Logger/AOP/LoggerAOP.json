@@ -1,5 +1,0 @@
-{
-  "RAWLoggerAOP": {
-    "RevitApiWrapper.Logger.AOP.VerboseLoggerInterceptor": "RevitApiWrapper"
-  }
-}

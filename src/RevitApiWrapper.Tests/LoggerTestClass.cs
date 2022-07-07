@@ -1,6 +1,4 @@
 ﻿using RevitApiWrapper.Logger;
-using RevitApiWrapper.Logger.AOP;
-using RevitApiWrapper.Logger.AOP.Extension;
 using RevitApiWrapper.Logger.Extension;
 using RevitApiWrapper.Logger.Interface;
 using System;
@@ -21,8 +19,7 @@ namespace RevitApiWrapper.Tests
         {
             ILoggerConfiguration config = LoggerConfiguration.Default.FromJson();
             LogFactory = LoggerFactory.Build(config);
-            _logger=LogFactory.CreateLogger<LoggerTestClass>()
-                              .AOP(LoggerAOPHelper.LoadAOPJson());
+            _logger=LogFactory.CreateLogger<LoggerTestClass>();
         }
 
         public void logTest()
